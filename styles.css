@@ -1,0 +1,182 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: navajowhite;
+  list-style-type: disc;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(229, 234, 236);
+  font-family: montserrat;
+}
+nav{
+  background: rgb(97, 125, 218);
+  height:80px;
+  width: 100%;
+}
+
+label.logo{
+  color:white ;
+  font-size:34px;
+  line-height: 75px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+
+}
+nav ul li{
+  display: inline;
+  line-height:75px;
+  margin:0 5px;
+}
+nav ul li a{
+  color:rgb(233, 156, 156);
+  font-size:17px;
+  padding:7px 13 px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background:#c96790;
+  transition: .6s;
+
+}
+ 
+.checkbtn{
+  font-size:30px;
+  color:blanchedalmond;
+  float:left;
+  line-height: 75px;
+  margin-left: 40px;
+  cursor: pointer;
+  display:none;
+
+}
+#check{
+  display:none;
+}
+@media (min-width: 768px){
+  label.logo{
+    font-size:30px;
+    padding-right: 50px;
+  }
+  nav ul li a{
+    font-size:16px;
+  }
+}
+<!--@media (min-width:955px){
+  .checkbtn{
+    display:block;
+  }
+  
+  nav ul li{
+    display:inline-flex;
+  }
+  nav ul li a{
+    font-size:21px;
+  }
+  a:hover,a.active{
+    background:none;
+    color:rgb(235, 132, 183);
+  }
+  #check:checked ~ul{
+    left:0;
+  }
+}-->
+
+<!--small container-->
+.small-container{
+  padding:auto;
+  margin-block-end: auto;
+  height: auto;
+  align-self: start;
+  text-align:left;
+}
+.col-2{
+  padding:15px;
+  text-align:auto;
+}
+
+.container{
+  max-width: 1200px;
+  margin:auto;
+  background:#ced6db;
+  overflow: auto;
+}
+.images{
+  max-zoom: 3;
+  
+  border-radius: 1px solid #fff;
+  float: auto;;
+  width:391px;
+
+}
+.images img{
+  width:100%;
+  height:auto;
+  align-self: start;
+}
+.desc{
+  padding:15px;
+  text-align:left;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown option {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown option:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.footer {
+  text-align:center;
+  page-break-after: auto;
+  background:#ced6db;
+}
+.select{
+  text-transform: inherit;
+  text-overflow: clip;
+  background:#c96790;
+}
